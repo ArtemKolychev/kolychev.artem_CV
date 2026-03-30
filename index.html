@@ -4,439 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artem Kolychev - Životopis</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            color: #333;
-            line-height: 1.5;
-            background: #fff;
-            margin: 0;
-            padding: 40px 20px;
-        }
-        .resume {
-            max-width: 900px;
-            margin: auto;
-            background: #fff;
-        }
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding-bottom: 30px;
-            margin-bottom: 30px;
-        }
-        .header-left {
-            display: flex;
-            align-items: center;
-            gap: 25px;
-        }
-        .photo-placeholder {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            background-color: #eee;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #aaa;
-            font-size: 12px;
-            text-align: center;
-            overflow: hidden;
-        }
-        .name-title h1 {
-            font-size: 42px;
-            margin: 0;
-            font-weight: 300;
-            line-height: 1.1;
-        }
-        .name-title h1 strong {
-            font-weight: 700;
-        }
-        .name-title p {
-            font-size: 14px;
-            color: #777;
-            letter-spacing: 2px;
-            margin: 10px 0 0;
-            text-transform: uppercase;
-        }
-        .contact-info {
-            text-align: left;
-            font-size: 13px;
-            color: #555;
-            line-height: 1.8;
-        }
-        .contact-info span {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        .content {
-            display: flex;
-            gap: 50px;
-        }
-        .left-col {
-            width: 30%;
-        }
-        .right-col {
-            width: 70%;
-            border-left: 2px solid #333;
-            padding-left: 40px;
-        }
-        h2 {
-            font-size: 16px;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            border-bottom: 2px solid #333;
-            padding-bottom: 8px;
-            margin-bottom: 25px;
-            margin-top: 0;
-        }
-        .section-item {
-            margin-bottom: 25px;
-            position: relative;
-        }
-        .left-col .section-item {
-            margin-bottom: 30px;
-        }
-        .section-item h3 {
-            font-size: 13px;
-            margin: 0 0 5px;
-            text-transform: uppercase;
-            font-weight: 700;
-        }
-        .section-item .date {
-            font-size: 12px;
-            color: #888;
-            font-weight: 600;
-            text-transform: uppercase;
-        }
-        .timeline-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            margin-bottom: 5px;
-        }
-        .company {
-            font-size: 12px;
-            font-weight: 600;
-            color: #555;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 10px;
-        }
-        .section-item p {
-            font-size: 13px;
-            margin: 0;
-            color: #666;
-            line-height: 1.6;
-        }
-        .section-item ul {
-            padding-left: 15px;
-            margin-top: 5px;
-            margin-bottom: 0;
-            font-size: 13px;
-            color: #666;
-        }
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-        .skill-tag {
-            border: 1px solid #ccc;
-            padding: 6px 10px;
-            font-size: 12px;
-            color: #555;
-        }
-        .language-bar {
-            margin-bottom: 15px;
-        }
-        .language-name {
-            font-size: 12px;
-            margin-bottom: 5px;
-            text-transform: uppercase;
-        }
-        .bar-bg {
-            height: 4px;
-            background-color: #eee;
-            width: 100%;
-        }
-        .bar-fill {
-            height: 100%;
-            background-color: #333;
-        }
-        .personal-detail {
-            margin-bottom: 15px;
-        }
-        .personal-detail label {
-            display: block;
-            font-size: 11px;
-            color: #888;
-            margin-bottom: 2px;
-        }
-        .personal-detail span {
-            font-size: 13px;
-            color: #555;
-        }
-        .bullet-point {
-            position: absolute;
-            left: -46px;
-            top: 4px;
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            border: 2px solid #333;
-            background: #fff;
-        }
-        .left-col .bullet-point {
-            left: -15px;
-            border-width: 1px;
-            width: 8px;
-            height: 8px;
-            top: 3px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <div class="resume">
+
+    <!-- Language switcher -->
+    <div class="lang-switcher">
+        <button class="lang-btn" data-lang="cs">CZ</button>
+        <button class="lang-btn" data-lang="ru">RU</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+
+    <!-- Header -->
     <div class="header">
         <div class="header-left">
             <div class="photo-placeholder">
-                [Vaše<br>Fotografie]
+                <img src="photo.png" alt="Artem Kolychev">
             </div>
             <div class="name-title">
                 <h1>ARTEM<br><strong>KOLYCHEV</strong></h1>
-                <p>PHP Senior Developer</p>
+                <p id="job-title"></p>
             </div>
         </div>
         <div class="contact-info">
-            <span>📍 Praha, Česká republika</span>
+            <span id="contact-location"></span>
             <span>📞 +420 721 202 271</span>
             <span>✉️ perec.pochta@gmail.com</span>
         </div>
     </div>
 
     <div class="content">
+
+        <!-- Left column -->
         <div class="left-col">
-            <h2>Vzdělání</h2>
-            <div class="section-item" style="padding-left: 15px;">
+
+            <h2 id="h-education"></h2>
+            <div id="education-list"></div>
+
+            <h2 id="h-skills"></h2>
+            <div class="skills" id="skills-list"></div>
+
+            <h2 id="h-links" class="mt-40"></h2>
+            <div id="links-list"></div>
+
+            <h2 id="h-languages"></h2>
+            <div id="language-bars"></div>
+
+            <h2 id="h-personal" class="mt-40"></h2>
+            <div id="personal-list"></div>
+
+            <h2 id="h-license" class="mt-40"></h2>
+            <div class="section-item" style="padding-left:15px;">
                 <div class="bullet-point"></div>
-                <h3>IT</h3>
-                <p class="company">UNIVERZITA PARDUBICE</p>
-                <p class="date">2019</p>
-            </div>
-            <div class="section-item" style="padding-left: 15px;">
-                <div class="bullet-point"></div>
-                <h3>ADMINISTRACE A AUTOMATIZACE</h3>
-                <p class="company">VYSOKÁ ŠKOLA IT SKS V RUSKU</p>
-                <p class="date">2013</p>
+                <h3 id="license-label" style="margin-bottom:2px;"></h3>
+                <span id="license-value" style="font-size:13px; color:#666;"></span>
             </div>
 
-            <h2>Hlavní Dovednosti</h2>
-            <div class="skills">
-                <div class="skill-tag">Vedení týmu</div>
-                <div class="skill-tag">Laravel</div>
-                <div class="skill-tag">Oracle SQL</div>
-                <div class="skill-tag">Vue/Nuxt</div>
-                <div class="skill-tag">Symphony</div>
-                <div class="skill-tag">MySQL</div>
-                <div class="skill-tag">Docker</div>
-                <div class="skill-tag">CI/CD</div>
-                <div class="skill-tag">Nextjs</div>
-                <div class="skill-tag">React</div>
-                <div class="skill-tag">PHP</div>
-            </div>
-
-            <h2 style="margin-top: 40px;">Webové Stránky a Sociální Odkazy</h2>
-            <div class="section-item">
-                <p style="font-size: 12px;">Můj projekt:<br><a href="http://visaczech.cz" style="color:#333;">visaczech.cz</a></p>
-            </div>
-
-            <h2>Jazyky</h2>
-            <div class="language-bar">
-                <div class="language-name">ENG</div>
-                <div class="bar-bg"><div class="bar-fill" style="width: 60%;"></div></div>
-            </div>
-            <div class="language-bar">
-                <div class="language-name">RUS</div>
-                <div class="bar-bg"><div class="bar-fill" style="width: 100%;"></div></div>
-            </div>
-            <div class="language-bar">
-                <div class="language-name">CZ</div>
-                <div class="bar-bg"><div class="bar-fill" style="width: 60%;"></div></div>
-            </div>
-
-            <h2 style="margin-top: 40px;">Osobní Údaje</h2>
-            <div class="section-item" style="padding-left: 15px;">
-                <div class="bullet-point"></div>
-                <div class="personal-detail">
-                    <label>Datum narození</label>
-                    <span>20 dub 1992</span>
-                </div>
-            </div>
-            <div class="section-item" style="padding-left: 15px;">
-                <div class="bullet-point"></div>
-                <div class="personal-detail">
-                    <label>Státní příslušnost</label>
-                    <span>Rus</span>
-                </div>
-            </div>
-            <div class="section-item" style="padding-left: 15px;">
-                <div class="bullet-point"></div>
-                <div class="personal-detail">
-                    <label>Rodinný stav</label>
-                    <span>Svobodný</span>
-                </div>
-            </div>
-
-            <h2 style="margin-top: 40px;">Řidičský Průkaz</h2>
-            <div class="section-item" style="padding-left: 15px;">
-                <div class="bullet-point"></div>
-                <h3 style="margin-bottom: 2px;">ŘIDIČSKÝ PRŮKAZ</h3>
-                <span style="font-size: 13px; color: #666;">A, B</span>
-            </div>
         </div>
 
+        <!-- Right column -->
         <div class="right-col">
-            <h2>Profesní Shrnutí</h2>
+
+            <h2 id="h-summary"></h2>
             <div class="section-item">
-                <div class="bullet-point" style="top: 6px;"></div>
-                <p style="margin-bottom: 10px;">Jsem zkušený <strong>full-stack vývojář</strong> se silným zaměřením na <strong>PHP</strong> a backendové technologie. Aktivně využívám <strong>AI</strong> k zvyšování efektivity práce a automatizaci opakovaných činností. Mám bohaté zkušenosti s návrhem a implementací robustních backendových řešení, integrací služeb třetích stran a optimalizací výkonnosti aplikací.</p>
-                <p style="margin-bottom: 10px;">Zvládám návrh a údržbu <strong>CI/CD</strong> pipeline a práci s <strong>Dockerem</strong> pro konzistentní a efektivní nasazování. Úspěšně jsem vedl vývojový tým o sedmi programátorech, kde jsem se podílel na technickém vedení, <strong>code review</strong>, nastavování standardů a mentoringu.</p>
-                <p>Dlouhodobě se zaměřuji na <strong>automatizaci</strong> procesů a minimalizaci lidského faktoru – využívám automatizované <strong>testování</strong>, statické analyzátory kódu a další nástroje pro zajištění kvality a spolehlivosti. V případě potřeby se věnuji také frontendovému vývoji, zejména s využitím <strong>Vue.js</strong> a <strong>Nuxt.js</strong>, abych byl schopen pokrýt celý životní cyklus webové aplikace.</p>
+                <div class="bullet-point" style="top:6px;"></div>
+                <div id="summary-text"></div>
             </div>
 
-            <h2 style="margin-top: 40px;">Pracovní Historie</h2>
-
-
-            <div class="section-item">
-                <div class="bullet-point"></div>
-                <div class="timeline-header">
-                    <h3>PHP DEVELOPER</h3>
-                    <span class="date">LED 2026 - DUB 2026</span>
-                </div>
-                <div class="company">NICE, PRAGUE</div>
-                <ul>
-                    <li>Vývoj softwaru v PHP 8.2 pro mezinárodní společnost, která zaměstnává 600+ lidí a pomáhá firmám implementovat call centra</li>
-                    <li>Tvorba a údržba backendového kódu v PHP 8.2 v rámci existujícího systému pro podporu call center</li>
-                    <li>Psaní a úprava automatických testů k ověření funkčnosti a stability vyvíjených řešení</li>
-                </ul>
-            </div>
-
-            <div class="section-item">
-                <div class="bullet-point"></div>
-                <div class="timeline-header">
-                    <h3>FULL STACK DEVELOPER</h3>
-                    <span class="date">ČVC 2025 - PRO 2025</span>
-                </div>
-                <div class="company">FRENKEE.CZ, PRAGUE</div>
-                <p>Vývoj interního systému v <strong>PHP</strong> (Symfony, Nette) a tvorba frontendových částí v <strong>Reactu</strong>. Správa verzí v <strong>GITu</strong>, práce v prostředí <strong>Dockeru</strong> a integrace <strong>AI nástrojů</strong> (Claude / OpenAI). Zodpovědnost za <strong>napojení API třetích stran</strong> a komunikaci s externími službami.</p>
-            </div>
-
-            <div class="section-item">
-                <div class="bullet-point"></div>
-                <div class="timeline-header">
-                    <h3>FULL STACK DEVELOPER</h3>
-                    <span class="date">LIS 2024 - ČVC 2025</span>
-                </div>
-                <div class="company">MOUNTAINLIFT, PRAHA</div>
-                <p>Vývoj webových stránek pro zákazníky od komunikace s klientem po full stack vývoj.<br>
-                    FE: react, nextjs<br>
-                    BE: Laravel, Strapi (node less cocode technologie)<br>
-                    komunikace s klientem<br>
-                    řízení úkolů<br>
-                    vývoj CI/CD, FE a BE</p>
-            </div>
-
-            <div class="section-item">
-                <div class="bullet-point"></div>
-                <div class="timeline-header">
-                    <h3>BACKEND DEVELOPER</h3>
-                    <span class="date">BŘE 2022 - LIS 2024</span>
-                </div>
-                <div class="company">JÁ SÁM, PRAHA</div>
-                <p>Osobní projekt pro automatizaci vízového procesu v České republice. Používá služby 3 zemí pro scraping dat z pasu a komunikaci s administrativními službami.<br>
-                    FE napsaný s Nuxt3, tailwind a vuetify.<br>
-                    BE používá nodeJS.<br>
-                    Obsah je uložen ve strapi.<br>
-                    Nasazení je implementováno pomocí gitlab CI/CD a docker.</p>
-            </div>
-
-            <div class="section-item">
-                <div class="bullet-point"></div>
-                <div class="timeline-header">
-                    <h3>BACKEND DEVELOPER</h3>
-                    <span class="date">SRP 2022 - ZÁŘ 2024</span>
-                </div>
-                <div class="company">HEUREKA CZ, PRAHA</div>
-                <p>Podpora starého projektu a psaní nových funkcí pro agregátor API uživatelské komunikace s dopravními společnostmi v PHP 7.4-8.2.<br>
-                    Vytvoření infrastruktury docker a CI/CD</p>
-            </div>
-
-            <div class="section-item">
-                <div class="bullet-point"></div>
-                <div class="timeline-header">
-                    <h3>FULL STACK DEVELOPER</h3>
-                    <span class="date">SRP 2021 - ČVN 2022</span>
-                </div>
-                <div class="company">CFG - COMFORT FINANCE GROUP, PRAHA</div>
-                <p>Vyvinul backend pomocí PHP 7.4 a zlepšil spolupráci na frontendu prostřednictvím Nuxt 3 a Tailwind pro nástroje finančního srovnání.</p>
-            </div>
-
-            <div class="section-item">
-                <div class="bullet-point"></div>
-                <div class="timeline-header">
-                    <h3>VEDOUCÍ TÝMU, FULLSTACK DEVELOPER</h3>
-                    <span class="date">ÚNO 2018 - ČVC 2021</span>
-                </div>
-                <div class="company">TOMMYSTACHI, PRAHA</div>
-                <p>Řídil tým sedmi programátorů při vývoji projektu vysoce bezpečného poštovního klienta s primárním zaměřením na PHP a backendové technologie. Vedl výběr backendových technologií a navrhl architekturu projektu pro optimalizaci bezpečnosti a výkonu. Školil a mentoroval méně zkušené kolegy v PHP a osvědčených postupech backendového vývoje. Vyvinul klíčové backendové funkce a API, které se bezproblémově integrují s frontendovými komponenty postavenými pomocí Vue.js. Zřídil prostředí Docker a implementoval CI/CD pipelines pro zlepšení pracovních postupů backendového vývoje a efektivity nasazení.</p>
-            </div>
-
-            <div class="section-item">
-                <div class="bullet-point"></div>
-                <div class="timeline-header">
-                    <h3>BACKEND DEVELOPER</h3>
-                    <span class="date">KVĚ 2017 - ÚNO 2018</span>
-                </div>
-                <div class="company">DESIGNEO, PRAHA</div>
-                <p>Odbornost v PHP 7.4/8.2, Symphony frameworku a Bootstrapu, využívající robustní dovednosti backendového vývoje.</p>
-            </div>
-
-            <div class="section-item">
-                <div class="bullet-point"></div>
-                <div class="timeline-header">
-                    <h3>PHP BACKEND/FRONTEND PROGRAMÁTOR</h3>
-                    <span class="date">ČVN 2016 - KVĚ 2017</span>
-                </div>
-                <div class="company">RUTERRAAPATMENT, PRAHA</div>
-                <p>Vývoj nového projektu pro správu bytů a financí. Projekt byl vyvinut pomocí PHP5.6, MySql a jQ.</p>
-            </div>
-
-            <div class="section-item">
-                <div class="bullet-point"></div>
-                <div class="timeline-header">
-                    <h3>PHP BACKEND/FRONTEND PROGRAMÁTOR</h3>
-                    <span class="date">LED 2015 - ČVN 2016</span>
-                </div>
-                <div class="company">MONSTERMEDIA, PRAHA</div>
-                <p>Vývoj nových funkcí, úprava starých, refaktoring starého kódu.</p>
-            </div>
-
-            <div class="section-item">
-                <div class="bullet-point"></div>
-                <div class="timeline-header">
-                    <h3>SYSTÉMOVÝ ADMINISTRÁTOR</h3>
-                    <span class="date">KVĚ 2012 - LED 2014</span>
-                </div>
-                <div class="company">OBCHOD, STAVROPOL</div>
-                <p>Podpora IT infrastruktury</p>
-            </div>
+            <h2 id="h-experience" class="mt-40"></h2>
+            <div id="experience-list"></div>
 
         </div>
     </div>
 </div>
 
+<script src="data.js"></script>
+<script src="app.js"></script>
 </body>
 </html>

@@ -326,6 +326,76 @@ h2 {
     }
 }
 
+/* ─── Print ─────────────────────────────────────────────────────── */
+@media print {
+    body {
+        padding: 0;
+        margin: 0;
+        background: #fff;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .resume {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    /* Hide language switcher on print */
+    .lang-switcher {
+        display: none;
+    }
+
+    /* Force desktop two-column layout */
+    .header {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .content {
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .left-col {
+        width: 30%;
+    }
+
+    .right-col {
+        width: 70%;
+        border-left: 2px solid #333;
+        border-top: none;
+        padding-left: 32px;
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    .right-col .bullet-point {
+        display: block;
+    }
+
+    .right-col .section-item {
+        padding-left: 20px;
+    }
+
+    .timeline-header {
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    /* Avoid breaking sections across pages */
+    .section-item {
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
+
+    h2 {
+        page-break-after: avoid;
+        break-after: avoid;
+    }
+}
+
 /* ─── Mobile (≤ 480px) ─────────────────────────────────────────── */
 @media (max-width: 480px) {
     body {

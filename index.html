@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artem Kolychev - Životopis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="resume">
+
+    <!-- Language switcher -->
+    <div class="lang-switcher">
+        <button class="lang-btn" data-lang="cs">CZ</button>
+        <button class="lang-btn" data-lang="ru">RU</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+
+    <!-- Header -->
+    <div class="header">
+        <div class="header-left">
+            <div class="photo-placeholder">
+                <img src="photo.png" alt="Artem Kolychev">
+            </div>
+            <div class="name-title">
+                <h1>ARTEM<br><strong>KOLYCHEV</strong></h1>
+                <p id="job-title"></p>
+            </div>
+        </div>
+        <div class="contact-info">
+            <span id="contact-location"></span>
+            <span>📞 +420 721 202 271</span>
+            <span>✉️ perec.pochta@gmail.com</span>
+        </div>
+    </div>
+
+    <div class="content">
+
+        <!-- Left column -->
+        <div class="left-col">
+
+            <h2 id="h-education"></h2>
+            <div id="education-list"></div>
+
+            <h2 id="h-skills"></h2>
+            <div class="skills" id="skills-list"></div>
+
+            <h2 id="h-links" class="mt-40"></h2>
+            <div id="links-list"></div>
+
+            <h2 id="h-languages"></h2>
+            <div id="language-bars"></div>
+
+            <h2 id="h-personal" class="mt-40"></h2>
+            <div id="personal-list"></div>
+
+            <h2 id="h-license" class="mt-40"></h2>
+            <div class="section-item" style="padding-left:15px;">
+                <div class="bullet-point"></div>
+                <h3 id="license-label" style="margin-bottom:2px;"></h3>
+                <span id="license-value" style="font-size:13px; color:#666;"></span>
+            </div>
+
+        </div>
+
+        <!-- Right column -->
+        <div class="right-col">
+
+            <h2 id="h-summary"></h2>
+            <div class="section-item">
+                <div class="bullet-point" style="top:6px;"></div>
+                <div id="summary-text"></div>
+            </div>
+
+            <h2 id="h-experience" class="mt-40"></h2>
+            <div id="experience-list"></div>
+
+        </div>
+    </div>
+</div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,473 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: #333;
+    line-height: 1.5;
+    background: #fff;
+    margin: 0;
+    padding: 40px 20px;
+}
+
+.resume {
+    max-width: 900px;
+    margin: auto;
+    background: #fff;
+}
+
+/* Language switcher */
+.lang-switcher {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.lang-btn {
+    background: none;
+    border: 1px solid #ccc;
+    padding: 4px 12px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #777;
+    margin-left: 6px;
+    transition: all 0.2s;
+}
+
+.lang-btn:hover {
+    border-color: #333;
+    color: #333;
+}
+
+.lang-btn.active {
+    background: #333;
+    border-color: #333;
+    color: #fff;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.photo-placeholder {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aaa;
+    font-size: 12px;
+    text-align: center;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.photo-placeholder img {
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transform: scale(2.8);
+    margin-top: 125px;
+}
+
+.name-title h1 {
+    font-size: 42px;
+    margin: 0;
+    font-weight: 300;
+    line-height: 1.1;
+}
+
+.name-title h1 strong {
+    font-weight: 700;
+}
+
+.name-title p {
+    font-size: 14px;
+    color: #777;
+    letter-spacing: 2px;
+    margin: 10px 0 0;
+    text-transform: uppercase;
+}
+
+.contact-info {
+    text-align: left;
+    font-size: 13px;
+    color: #555;
+    line-height: 1.8;
+}
+
+.contact-info span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Layout */
+.content {
+    display: flex;
+    gap: 50px;
+}
+
+.left-col {
+    width: 30%;
+}
+
+.right-col {
+    width: 70%;
+    border-left: 2px solid #333;
+    padding-left: 40px;
+}
+
+/* Section headings */
+h2 {
+    font-size: 16px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #333;
+    padding-bottom: 8px;
+    margin-bottom: 25px;
+    margin-top: 0;
+}
+
+/* Section items */
+.section-item {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.left-col .section-item {
+    margin-bottom: 30px;
+}
+
+.section-item h3 {
+    font-size: 13px;
+    margin: 0 0 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.section-item .date {
+    font-size: 12px;
+    color: #888;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.timeline-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 5px;
+}
+
+.company {
+    font-size: 12px;
+    font-weight: 600;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.section-item p {
+    font-size: 13px;
+    margin: 0;
+    color: #666;
+    line-height: 1.6;
+}
+
+.section-item ul {
+    padding-left: 15px;
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-size: 13px;
+    color: #666;
+}
+
+/* Skills */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-tag {
+    border: 1px solid #ccc;
+    padding: 6px 10px;
+    font-size: 12px;
+    color: #555;
+}
+
+.skill-group {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.skill-category {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #888;
+    margin-bottom: 6px;
+    margin-top: 2px;
+}
+
+/* Language bars */
+.language-bar {
+    margin-bottom: 15px;
+}
+
+.language-name {
+    font-size: 12px;
+    margin-bottom: 5px;
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+.bar-bg {
+    height: 4px;
+    background-color: #eee;
+    width: 100%;
+}
+
+.bar-fill {
+    height: 100%;
+    background-color: #333;
+}
+
+/* Personal details */
+.personal-detail {
+    margin-bottom: 15px;
+}
+
+.personal-detail label {
+    display: block;
+    font-size: 11px;
+    color: #888;
+    margin-bottom: 2px;
+}
+
+.personal-detail span {
+    font-size: 13px;
+    color: #555;
+}
+
+/* Timeline bullet points */
+.bullet-point {
+    position: absolute;
+    left: -46px;
+    top: 4px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    background: #fff;
+}
+
+.left-col .bullet-point {
+    left: -15px;
+    border-width: 1px;
+    width: 8px;
+    height: 8px;
+    top: 3px;
+}
+
+/* Spacing helpers */
+.mt-40 {
+    margin-top: 40px;
+}
+
+/* ─── Tablet (≤ 768px) ─────────────────────────────────────────── */
+@media (max-width: 768px) {
+    body {
+        padding: 24px 16px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding-bottom: 24px;
+        margin-bottom: 24px;
+    }
+
+    .content {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .left-col {
+        width: 100%;
+    }
+
+    .right-col {
+        width: 100%;
+        border-left: none;
+        border-top: 2px solid #333;
+        padding-left: 0;
+        padding-top: 32px;
+        margin-top: 8px;
+    }
+
+    /* Bullets in right col rely on left border — hide on mobile */
+    .right-col .bullet-point {
+        display: none;
+    }
+
+    /* Give back horizontal padding that bullet was eating */
+    .right-col .section-item {
+        padding-left: 0;
+    }
+
+    .timeline-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2px;
+    }
+}
+
+/* ─── Print ─────────────────────────────────────────────────────── */
+@media print {
+    body {
+        padding: 0;
+        margin: 0;
+        background: #fff;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .resume {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    /* Hide language switcher on print */
+    .lang-switcher {
+        display: none;
+    }
+
+    /* Force desktop two-column layout */
+    .header {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .content {
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .left-col {
+        width: 30%;
+    }
+
+    .right-col {
+        width: 70%;
+        border-left: 2px solid #333;
+        border-top: none;
+        padding-left: 32px;
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    .right-col .bullet-point {
+        display: block;
+    }
+
+    .right-col .section-item {
+        padding-left: 20px;
+    }
+
+    .timeline-header {
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    /* Avoid breaking sections across pages */
+    .section-item {
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
+
+    h2 {
+        page-break-after: avoid;
+        break-after: avoid;
+    }
+}
+
+/* ─── Mobile (≤ 480px) ─────────────────────────────────────────── */
+@media (max-width: 480px) {
+    body {
+        padding: 16px 14px;
+    }
+
+    .lang-btn {
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+
+    .header-left {
+        gap: 16px;
+    }
+
+    .photo-placeholder {
+        width: 80px;
+        height: 80px;
+    }
+
+    .name-title h1 {
+        font-size: 28px;
+    }
+
+    .name-title p {
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+    .contact-info {
+        font-size: 13px;
+    }
+
+    h2 {
+        font-size: 13px;
+        letter-spacing: 2px;
+    }
+
+    .section-item h3 {
+        font-size: 12px;
+    }
+
+    .section-item p,
+    .section-item ul {
+        font-size: 13px;
+    }
+
+    .skill-tag {
+        font-size: 12px;
+        padding: 5px 9px;
+    }
+}
+
+.project-block { margin-bottom: 10px; }
+.project-block:last-child { margin-bottom: 0; }
+.project-title { font-weight: 700; font-size: 13px; color: #222; }
+.project-url { font-size: 11px; color: #888; margin-left: 6px; font-weight: 400; }
+.project-block ul { margin: 4px 0 0 16px; padding: 0; }
+.project-block ul li { font-size: 12px; color: #444; margin-bottom: 3px; line-height: 1.4; }

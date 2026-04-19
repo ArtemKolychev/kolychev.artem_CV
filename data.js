@@ -41,7 +41,7 @@ const cvData = {
         ],
         license: { label: "ŘIDIČSKÝ PRŮKAZ", value: "A, B" },
         summary: [
-            "<strong>Senior AI Engineer</strong> a <strong>Node.js Architect</strong> s více než 10 lety zkušeností s navrhováním distribuovaných systémů a integrací umělé inteligence do business logiky. Specializuji se na <strong>návrh AI agentů</strong>, LLM pipeline (GPT-4o, Claude, OpenAI), event-driven mikroservisní architektury a zpracování dat ve velkém měřítku.",
+            "<strong>Senior AI Engineer</strong> a <strong>Node.js Architect</strong> s více než 10 lety zkušeností v softwarovém inženýrství, z toho <strong>4 roky se specializací na AI</strong> — návrh AI agentů, LLM pipeline (GPT-4o, Claude, OpenAI), event-driven mikroservisní architektury a zpracování dat ve velkém měřítku.",
             "Navrhuji a vlastním celý životní cyklus produkčních AI systémů — od lokálních Docker prostředí po cloudové nasazení. Vedl tým 7 inženýrů: technické vedení, code review, nastavování standardů a mentoring. Hlavní stack: <strong>Node.js (NestJS / Express)</strong>, TypeScript, Python scripty, REST API.",
             "Silné zaměření na observabilitu (Loki/Grafana s end-to-end trasovatelností přes jobId/traceId), spolehlivost AI pipeline a eliminaci manuálních procesů prostřednictvím automatizovaných pipeline a AI agentů zakotvených v business logice."
         ],
@@ -192,7 +192,7 @@ const cvData = {
         ],
         license: { label: "ВОДИТЕЛЬСКИЕ ПРАВА", value: "A, B" },
         summary: [
-            "<strong>Senior AI Engineer</strong> и <strong>Node.js Architect</strong> с 10+ годами опыта проектирования распределённых систем и интеграции искусственного интеллекта в бизнес-логику. Специализация на <strong>проектировании AI-агентов</strong>, LLM pipeline (GPT-4o, Claude, OpenAI), event-driven микросервисных архитектурах и обработке данных в масштабе.",
+            "<strong>Senior AI Engineer</strong> и <strong>Node.js Architect</strong> с 10+ годами опыта в разработке ПО, из которых <strong>4 года специализация на AI</strong> — проектирование AI-агентов, LLM pipeline (GPT-4o, Claude, OpenAI), event-driven микросервисных архитектурах и обработке данных в масштабе.",
             "Проектирую и владею полным жизненным циклом продакшн AI-систем — от локальных Docker-сред до облачного деплоя. Руководил командой 7 инженеров: техническое лидерство, code review, стандарты и менторинг. Основной стек: <strong>Node.js (NestJS / Express)</strong>, TypeScript, REST API.",
             "Сильный фокус на наблюдаемости (Loki/Grafana со сквозной трассировкой по jobId/traceId), надёжности AI-пайплайнов и устранении ручных процессов через автоматизированные пайплайны и AI-агентов, встроенных в бизнес-логику."
         ],
@@ -342,7 +342,7 @@ const cvData = {
         ],
         license: { label: "DRIVING LICENSE", value: "A, B" },
         summary: [
-            "<strong>Senior AI Engineer</strong> and <strong>Node.js Architect</strong> with 10+ years of experience designing distributed systems and integrating artificial intelligence into business logic. Specialises in <strong>AI agent design</strong>, LLM pipelines (GPT-4o, Claude, OpenAI), event-driven microservice architectures, and data processing at scale.",
+            "<strong>Senior AI Engineer</strong> and <strong>Node.js Architect</strong> with 10+ years in software engineering, including <strong>4 years specialising in AI</strong> — AI agent design, LLM pipelines (GPT-4o, Claude, OpenAI), event-driven microservice architectures, and data processing at scale.",
             "Architected and owned full production AI system lifecycles — from self-hosted Docker environments on Linux to cloud deployments. Led a team of 7 engineers: technical leadership, <strong>code review</strong>, standard-setting, and mentoring. Primary stack: <strong>Node.js (NestJS / Express)</strong>, TypeScript, REST API.",
             "Strong focus on observability (Loki/Grafana with cross-service tracing via jobId/traceId), AI pipeline reliability, and eliminating manual processes through automated pipelines and AI agents embedded in business workflows."
         ],

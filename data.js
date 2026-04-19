@@ -77,7 +77,7 @@ const cvData = {
                 date: "LIS 2024 - ČVC 2025",
                 company: "MOUNTAINLIFT, PRAHA",
                 items: [
-                    "Využití <strong>Claude Code</strong> pro AI-asistovaný vývoj, refaktoring a code review v každodenním workflow",
+                    "Využití <strong>Claude 3.5 Sonnet</strong> pro AI-asistovaný vývoj, refaktoring a code review v každodenním workflow",
                     "Implementace RESTful API s <strong>Node.js/Strapi</strong> a <strong>Laravel</strong> pro klientské webové platformy",
                     "Vytvoření frontendových rozhraní v <strong>React</strong> a <strong>Next.js</strong>"
                 ]
@@ -99,7 +99,7 @@ const cvData = {
                 items: [
                     "Návrh a implementace backend API v <strong>PHP 7.4</strong> pro nástroje finančního srovnání",
                     "Optimalizace databázových dotazů pro zlepšení výkonu výpočetně náročných endpointů",
-                    "Spolupráce na frontendu (<strong>Nuxt 3</strong> / Tailwind) pro zajištění souladu API kontraktů s UI"
+                    "Spolupráce na frontendu (<strong>Vue.js / Nuxt</strong> / Tailwind) pro zajištění souladu API kontraktů s UI"
                 ]
             },
             {
@@ -119,7 +119,7 @@ const cvData = {
                 date: "KVĚ 2017 - ÚNO 2018",
                 company: "DESIGNEO, PRAHA",
                 items: [
-                    "Implementace backendových funkcí v <strong>PHP 7.4/8.2</strong> a <strong>Symfony</strong> pro klientské webové aplikace"
+                    "Implementace backendových funkcí v <strong>PHP 7.1</strong> a <strong>Symfony</strong> pro klientské webové aplikace"
                 ]
             },
             {
@@ -228,7 +228,7 @@ const cvData = {
                 date: "НОЯ 2024 - ИЮЛ 2025",
                 company: "MOUNTAINLIFT, ПРАГА",
                 items: [
-                    "Использование <strong>Claude Code</strong> для AI-ассистированной разработки, рефакторинга и code review в повседневном workflow",
+                    "Использование <strong>Claude 3.5 Sonnet</strong> для AI-ассистированной разработки, рефакторинга и code review в повседневном workflow",
                     "Реализация RESTful API на <strong>Node.js/Strapi</strong> и <strong>Laravel</strong> для клиентских веб-платформ",
                     "Разработка фронтенда на <strong>React</strong> и <strong>Next.js</strong>"
                 ]
@@ -250,7 +250,7 @@ const cvData = {
                 items: [
                     "Проектирование и реализация бэкенд API на <strong>PHP 7.4</strong> для инструментов финансового сравнения",
                     "Оптимизация запросов к БД для повышения производительности вычислительно-интенсивных эндпоинтов",
-                    "Участие в разработке фронтенда (<strong>Nuxt 3</strong> / Tailwind) для согласования API-контрактов с UI"
+                    "Участие в разработке фронтенда (<strong>Vue.js / Nuxt</strong> / Tailwind) для согласования API-контрактов с UI"
                 ]
             },
             {
@@ -270,7 +270,7 @@ const cvData = {
                 date: "МАЙ 2017 - ФЕВ 2018",
                 company: "DESIGNEO, ПРАГА",
                 items: [
-                    "Реализация бэкенд-функций на <strong>PHP 7.4/8.2</strong> и <strong>Symfony</strong> для клиентских веб-приложений"
+                    "Реализация бэкенд-функций на <strong>PHP 7.1</strong> и <strong>Symfony</strong> для клиентских веб-приложений"
                 ]
             },
             {
@@ -378,7 +378,7 @@ const cvData = {
                 date: "NOV 2024 - JUL 2025",
                 company: "MOUNTAINLIFT, PRAGUE",
                 items: [
-                    "Daily use of <strong>Claude Code</strong> for AI-assisted development, refactoring, and code review across the engineering workflow",
+                    "Daily use of <strong>Claude 3.5 Sonnet</strong> for AI-assisted development, refactoring, and code review across the engineering workflow",
                     "Implementation of RESTful APIs with <strong>Node.js/Strapi</strong> and <strong>Laravel</strong> for client web platforms",
                     "Development of frontend interfaces with <strong>React</strong> and <strong>Next.js</strong>"
                 ]
@@ -400,7 +400,7 @@ const cvData = {
                 items: [
                     "Design and implementation of backend APIs in <strong>PHP 7.4</strong> for financial comparison tools",
                     "Optimisation of database queries, improving response times on calculation-heavy endpoints",
-                    "Collaboration on frontend (<strong>Nuxt 3</strong> / Tailwind) to align API contracts with UI requirements"
+                    "Collaboration on frontend (<strong>Vue.js / Nuxt</strong> / Tailwind) to align API contracts with UI requirements"
                 ]
             },
             {
@@ -420,7 +420,7 @@ const cvData = {
                 date: "MAY 2017 - FEB 2018",
                 company: "DESIGNEO, PRAGUE",
                 items: [
-                    "Implementation of backend features in <strong>PHP 7.4/8.2</strong> and <strong>Symfony</strong> for client web applications"
+                    "Implementation of backend features in <strong>PHP 7.1</strong> and <strong>Symfony</strong> for client web applications"
                 ]
             },
             {

@@ -41,9 +41,9 @@ const cvData = {
         ],
         license: { label: "ŘIDIČSKÝ PRŮKAZ", value: "A, B" },
         summary: [
-            "<strong>Senior AI Engineer</strong> a <strong>Node.js Architect</strong> s více než 10 lety zkušeností v softwarovém inženýrství, z toho <strong>4 roky se specializací na AI</strong> — návrh AI agentů, LLM pipeline (GPT-4o, Claude, OpenAI), event-driven mikroservisní architektury a zpracování dat ve velkém měřítku.",
-            "Navrhuji a vlastním celý životní cyklus produkčních AI systémů — od lokálních Docker prostředí po cloudové nasazení. Vedl tým 7 inženýrů: technické vedení, code review, nastavování standardů a mentoring. Hlavní stack: <strong>Node.js (NestJS / Express)</strong>, TypeScript, Python scripty, REST API.",
-            "Silné zaměření na observabilitu (Loki/Grafana s end-to-end trasovatelností přes jobId/traceId), spolehlivost AI pipeline a eliminaci manuálních procesů prostřednictvím automatizovaných pipeline a AI agentů zakotvených v business logice."
+            "<strong>Senior AI Engineer</strong> a <strong>Node.js Architect</strong> s více než 10 lety zkušeností v softwarovém inženýrství, z toho <strong>4 roky se specializací na AI</strong> — <strong>návrh AI agentů</strong>, <strong>LLM pipeline</strong> (<strong>GPT-4o</strong>, <strong>Claude</strong>, <strong>OpenAI</strong>), event-driven mikroservisní architektury a zpracování dat ve velkém měřítku.",
+            "Navrhuji a vlastním celý životní cyklus produkčních AI systémů — od lokálních Docker prostředí po cloudové nasazení. Vedl tým 7 inženýrů: technické vedení, code review, nastavování standardů a mentoring. Hlavní stack: <strong>Node.js (NestJS / Express)</strong>, <strong>TypeScript</strong>, REST API.",
+            "Silné zaměření na observabilitu (<strong>Loki/Grafana</strong>), spolehlivost <strong>AI pipeline</strong> a eliminaci manuálních procesů prostřednictvím automatizovaných pipeline a <strong>AI agentů</strong> zakotvených v business logice."
         ],
         experience: [
             {
@@ -53,13 +53,13 @@ const cvData = {
                 text: '<div class="project-block"><span class="project-title">Bazar AI</span><span class="project-url">bazarai.visaczech.cz</span><ul><li>Navrhl event-driven mikroslužby: <strong>NestJS</strong> (AI agent + automatizace prohlížeče), <strong>RabbitMQ</strong> (správa životního cyklu publikací), <strong>Symfony 7.3</strong> / <strong>PHP 8.4</strong> (business logika)</li><li>Integroval AI agenta na bázi GPT-4o Vision přímo do business logiky — klasifikace médií, seskupování položek, lookup VIN/SPZ, generování inzerátů</li><li>Vyvinul vysokozátěžovou stealth službu pro automatizaci prohlížeče přes rebrowser-playwright (Chromium) pro paralelní správu sezení a publikaci na více platformách</li><li>Nasadil observability stack: Loki + Grafana + Promtail s end-to-end trasovatelností přes jobId / traceId / sessionId</li><li>Konfiguroval Nginx reverse proxy s Cloudflare trusted proxy headers (CF-Connecting-IP) a SSL pro produkční nasazení</li></ul></div><div class="project-block"><span class="project-title">VisaCzech</span><span class="project-url">visaczech.cz</span><ul><li>Navrhl vrstvenou architekturu Controllers → Facades → Services → Repositories (<strong>Node.js/Express</strong> + <strong>TypeORM</strong>)</li><li>Integroval OCR pasů (Mindee), CRM API a české administrativní služby</li><li>Nasazeno přes GitLab CI/CD, Docker Compose a Nginx reverse proxy</li></ul></div>'
             },
             {
-                title: "BACKEND DEVELOPER",
+                title: "BACKEND DEVELOPER (AI nástroje)",
                 date: "LED 2026 - DUB 2026",
                 company: "NICE, PRAGUE",
                 items: [
-                    "Implementace backendových služeb v <strong>PHP 8.2</strong> pro mezinárodní platformu call center s 600+ zaměstnanci",
-                    "Optimalizace existujících call-center API a zvýšení stability a spolehlivosti systému",
-                    "Rozšíření pokrytí automatizovanými testy pro zajištění spolehlivosti kritických integrací"
+                    "Integrace <strong>Claude Code</strong> s firemními <strong>MCP</strong> servery pro AI-asistovaný vývoj a automatizovaný <strong>code review</strong> pipeline",
+                    "Nasazení <strong>AI asistenta v Jira</strong> (Claude/OpenAI) pro správu úkolů, generování dokumentace a triage bugů",
+                    "Implementace backendových služeb v <strong>PHP 8.2</strong> pro mezinárodní platformu call center s 600+ zaměstnanci"
                 ]
             },
             {
@@ -73,23 +73,23 @@ const cvData = {
                 ]
             },
             {
-                title: "BACKEND DEVELOPER",
+                title: "BACKEND DEVELOPER (AI nástroje)",
                 date: "LIS 2024 - ČVC 2025",
                 company: "MOUNTAINLIFT, PRAHA",
                 items: [
+                    "Využití <strong>Claude Code</strong> pro AI-asistovaný vývoj, refaktoring a code review v každodenním workflow",
                     "Implementace RESTful API s <strong>Node.js/Strapi</strong> a <strong>Laravel</strong> pro klientské webové platformy",
-                    "Vytvoření frontendových rozhraní v <strong>React</strong> a <strong>Next.js</strong>",
-                    "Návrh a údržba CI/CD pipeline pro FE i BE nasazení"
+                    "Vytvoření frontendových rozhraní v <strong>React</strong> a <strong>Next.js</strong>"
                 ]
             },
             {
-                title: "BACKEND DEVELOPER",
+                title: "BACKEND DEVELOPER (AI integrace)",
                 date: "SRP 2022 - ZÁŘ 2024",
                 company: "HEUREKA CZ, PRAHA",
                 items: [
+                    "Integrace <strong>OpenAI SDK</strong> do interních nástrojů pro automatizaci zpracování dat a generování obsahu",
                     "Správa a rozšiřování legacy <strong>PHP 7.4→8.2</strong> API agregátoru pro integraci dopravních společností",
-                    "Kontejnerizace aplikačního stacku s Dockerem, zlepšení konzistence nasazení a onboarding vývojářů",
-                    "Implementace CI/CD pipeline pro automatizaci testování a workflow nasazení"
+                    "Kontejnerizace aplikačního stacku s <strong>Dockerem</strong>, implementace <strong>CI/CD</strong> pipeline"
                 ]
             },
             {
@@ -192,9 +192,9 @@ const cvData = {
         ],
         license: { label: "ВОДИТЕЛЬСКИЕ ПРАВА", value: "A, B" },
         summary: [
-            "<strong>Senior AI Engineer</strong> и <strong>Node.js Architect</strong> с 10+ годами опыта в разработке ПО, из которых <strong>4 года специализация на AI</strong> — проектирование AI-агентов, LLM pipeline (GPT-4o, Claude, OpenAI), event-driven микросервисных архитектурах и обработке данных в масштабе.",
-            "Проектирую и владею полным жизненным циклом продакшн AI-систем — от локальных Docker-сред до облачного деплоя. Руководил командой 7 инженеров: техническое лидерство, code review, стандарты и менторинг. Основной стек: <strong>Node.js (NestJS / Express)</strong>, TypeScript, REST API.",
-            "Сильный фокус на наблюдаемости (Loki/Grafana со сквозной трассировкой по jobId/traceId), надёжности AI-пайплайнов и устранении ручных процессов через автоматизированные пайплайны и AI-агентов, встроенных в бизнес-логику."
+            "<strong>Senior AI Engineer</strong> и <strong>Node.js Architect</strong> с 10+ годами опыта в разработке ПО, из которых <strong>4 года специализация на AI</strong> — <strong>проектирование AI-агентов</strong>, <strong>LLM pipeline</strong> (<strong>GPT-4o</strong>, <strong>Claude</strong>, <strong>OpenAI</strong>), event-driven микросервисных архитектурах и обработке данных в масштабе.",
+            "Проектирую и владею полным жизненным циклом продакшн AI-систем — от локальных Docker-сред до облачного деплоя. Руководил командой 7 инженеров: техническое лидерство, code review, стандарты и менторинг. Основной стек: <strong>Node.js (NestJS / Express)</strong>, <strong>TypeScript</strong>, REST API.",
+            "Сильный фокус на наблюдаемости (<strong>Loki/Grafana</strong>), надёжности <strong>AI-пайплайнов</strong> и устранении ручных процессов через автоматизированные пайплайны и <strong>AI-агентов</strong>, встроенных в бизнес-логику."
         ],
         experience: [
             {
@@ -204,13 +204,13 @@ const cvData = {
                 text: '<div class="project-block"><span class="project-title">Bazar AI</span><span class="project-url">bazarai.visaczech.cz</span><ul><li>Спроектировал event-driven микросервисы: <strong>NestJS</strong> (AI-агент + браузерная автоматизация), <strong>RabbitMQ</strong> (управление жизненным циклом публикаций), <strong>Symfony 7.3</strong> / <strong>PHP 8.4</strong> (бизнес-логика)</li><li>Интегрировал AI-агент на базе GPT-4o Vision напрямую в бизнес-логику — классификация медиа, группировка товаров, поиск по VIN/госномеру, генерация объявлений</li><li>Разработал высоконагруженный stealth-сервис браузерной автоматизации через rebrowser-playwright (Chromium) для параллельного управления сессиями и публикации на нескольких платформах</li><li>Развернул стек наблюдаемости: Loki + Grafana + Promtail со сквозной трассировкой по jobId / traceId / sessionId</li><li>Настроил Nginx reverse proxy с Cloudflare trusted proxy headers (CF-Connecting-IP) и SSL для продакшн-деплоя</li></ul></div><div class="project-block"><span class="project-title">VisaCzech</span><span class="project-url">visaczech.cz</span><ul><li>Спроектировал многоуровневую архитектуру Controllers → Facades → Services → Repositories (<strong>Node.js/Express</strong> + <strong>TypeORM</strong>)</li><li>Интегрировал OCR паспортов (Mindee), CRM API и чешские административные сервисы</li><li>Деплой через GitLab CI/CD, Docker Compose и Nginx reverse proxy</li></ul></div>'
             },
             {
-                title: "BACKEND DEVELOPER",
+                title: "BACKEND DEVELOPER (AI инструменты)",
                 date: "ЯНВ 2026 - АПР 2026",
                 company: "NICE, ПРАГА",
                 items: [
-                    "Реализация бэкенд-сервисов на <strong>PHP 8.2</strong> для международной платформы колл-центров с 600+ сотрудниками",
-                    "Оптимизация существующих API колл-центра, повышение стабильности и надёжности системы",
-                    "Расширение покрытия автоматическими тестами для обеспечения надёжности критических интеграций"
+                    "Интеграция <strong>Claude Code</strong> с корпоративными <strong>MCP</strong> серверами для AI-ассистированной разработки и автоматизированного <strong>code review</strong> пайплайна",
+                    "Внедрение <strong>AI-ассистента в Jira</strong> (Claude/OpenAI) для управления задачами, генерации документации и триажа багов",
+                    "Реализация бэкенд-сервисов на <strong>PHP 8.2</strong> для международной платформы колл-центров с 600+ сотрудниками"
                 ]
             },
             {
@@ -224,23 +224,23 @@ const cvData = {
                 ]
             },
             {
-                title: "BACKEND DEVELOPER",
+                title: "BACKEND DEVELOPER (AI инструменты)",
                 date: "НОЯ 2024 - ИЮЛ 2025",
                 company: "MOUNTAINLIFT, ПРАГА",
                 items: [
+                    "Использование <strong>Claude Code</strong> для AI-ассистированной разработки, рефакторинга и code review в повседневном workflow",
                     "Реализация RESTful API на <strong>Node.js/Strapi</strong> и <strong>Laravel</strong> для клиентских веб-платформ",
-                    "Разработка фронтенда на <strong>React</strong> и <strong>Next.js</strong>",
-                    "Проектирование и поддержка CI/CD пайплайнов для FE и BE"
+                    "Разработка фронтенда на <strong>React</strong> и <strong>Next.js</strong>"
                 ]
             },
             {
-                title: "BACKEND DEVELOPER",
+                title: "BACKEND DEVELOPER (AI интеграция)",
                 date: "АВГ 2022 - СЕН 2024",
                 company: "HEUREKA CZ, ПРАГА",
                 items: [
+                    "Интеграция <strong>OpenAI SDK</strong> во внутренние инструменты для автоматизации обработки данных и генерации контента",
                     "Поддержка и расширение legacy <strong>PHP 7.4→8.2</strong> API-агрегатора для интеграций с транспортными компаниями",
-                    "Контейнеризация legacy-стека с Docker, улучшение консистентности деплоя и онбординга",
-                    "Реализация CI/CD пайплайна для автоматизации тестирования и деплоя"
+                    "Контейнеризация legacy-стека с <strong>Docker</strong>, реализация <strong>CI/CD</strong> пайплайна"
                 ]
             },
             {
@@ -342,9 +342,9 @@ const cvData = {
         ],
         license: { label: "DRIVING LICENSE", value: "A, B" },
         summary: [
-            "<strong>Senior AI Engineer</strong> and <strong>Node.js Architect</strong> with 10+ years in software engineering, including <strong>4 years specialising in AI</strong> — AI agent design, LLM pipelines (GPT-4o, Claude, OpenAI), event-driven microservice architectures, and data processing at scale.",
-            "Architected and owned full production AI system lifecycles — from self-hosted Docker environments on Linux to cloud deployments. Led a team of 7 engineers: technical leadership, <strong>code review</strong>, standard-setting, and mentoring. Primary stack: <strong>Node.js (NestJS / Express)</strong>, TypeScript, REST API.",
-            "Strong focus on observability (Loki/Grafana with cross-service tracing via jobId/traceId), AI pipeline reliability, and eliminating manual processes through automated pipelines and AI agents embedded in business workflows."
+            "<strong>Senior AI Engineer</strong> and <strong>Node.js Architect</strong> with 10+ years in software engineering, including <strong>4 years specialising in AI</strong> — <strong>AI agent design</strong>, <strong>LLM pipelines</strong> (<strong>GPT-4o</strong>, <strong>Claude</strong>, <strong>OpenAI</strong>), event-driven microservice architectures, and data processing at scale.",
+            "Architected and owned full production AI system lifecycles — from self-hosted Docker environments on Linux to cloud deployments. Led a team of 7 engineers: technical leadership, <strong>code review</strong>, standard-setting, and mentoring. Primary stack: <strong>Node.js (NestJS / Express)</strong>, <strong>TypeScript</strong>, REST API.",
+            "Strong focus on observability (<strong>Loki/Grafana</strong>), <strong>AI pipeline</strong> reliability, and eliminating manual processes through automated pipelines and <strong>AI agents</strong> embedded in business workflows."
         ],
         experience: [
             {
@@ -354,13 +354,13 @@ const cvData = {
                 text: '<div class="project-block"><span class="project-title">Bazar AI</span><span class="project-url">bazarai.visaczech.cz</span><ul><li>Architected event-driven microservices: <strong>NestJS</strong> (AI agent + browser automation), <strong>RabbitMQ</strong> (publication lifecycle management), <strong>Symfony 7.3</strong> / <strong>PHP 8.4</strong> (business logic)</li><li>Integrated GPT-4o Vision AI agent directly into business logic — media classification, item grouping, VIN/plate lookup, automated listing generation</li><li>Engineered a high-load stealth browser automation service via rebrowser-playwright (Chromium) for concurrent multi-platform session management and form submission</li><li>Deployed full observability stack: Loki + Grafana + Promtail with cross-service tracing via jobId / traceId / sessionId</li><li>Configured Nginx reverse proxy with Cloudflare trusted proxy headers (CF-Connecting-IP) and SSL for production deployment</li></ul></div><div class="project-block"><span class="project-title">VisaCzech</span><span class="project-url">visaczech.cz</span><ul><li>Designed layered backend architecture: Controllers → Facades → Services → Repositories (<strong>Node.js/Express</strong> + <strong>TypeORM</strong>)</li><li>Integrated passport OCR (Mindee), CRM APIs, and Czech administrative services</li><li>Deployed via GitLab CI/CD, Docker Compose, and Nginx reverse proxy</li></ul></div>'
             },
             {
-                title: "BACKEND DEVELOPER",
+                title: "BACKEND DEVELOPER (AI Tools)",
                 date: "JAN 2026 - APR 2026",
                 company: "NICE, PRAGUE",
                 items: [
-                    "Engineering of backend services in <strong>PHP 8.2</strong> for an international call-centre platform with 600+ employees",
-                    "Optimisation of existing call-centre APIs, improving system stability and reducing error rates",
-                    "Extension of automated test coverage to ensure reliability of critical telephony integrations"
+                    "Integration of <strong>Claude Code</strong> with corporate <strong>MCP</strong> servers for AI-assisted development and automated <strong>code review</strong> pipeline",
+                    "Deployment of an <strong>AI assistant in Jira</strong> (Claude/OpenAI) for task management, documentation generation, and bug triage",
+                    "Engineering of backend services in <strong>PHP 8.2</strong> for an international call-centre platform with 600+ employees"
                 ]
             },
             {
@@ -374,23 +374,23 @@ const cvData = {
                 ]
             },
             {
-                title: "BACKEND DEVELOPER",
+                title: "BACKEND DEVELOPER (AI Tools)",
                 date: "NOV 2024 - JUL 2025",
                 company: "MOUNTAINLIFT, PRAGUE",
                 items: [
+                    "Daily use of <strong>Claude Code</strong> for AI-assisted development, refactoring, and code review across the engineering workflow",
                     "Implementation of RESTful APIs with <strong>Node.js/Strapi</strong> and <strong>Laravel</strong> for client web platforms",
-                    "Development of frontend interfaces with <strong>React</strong> and <strong>Next.js</strong>",
-                    "Design and maintenance of CI/CD pipelines for FE and BE deployments"
+                    "Development of frontend interfaces with <strong>React</strong> and <strong>Next.js</strong>"
                 ]
             },
             {
-                title: "BACKEND DEVELOPER",
+                title: "BACKEND DEVELOPER (AI Integration)",
                 date: "AUG 2022 - SEP 2024",
                 company: "HEUREKA CZ, PRAGUE",
                 items: [
+                    "Integration of <strong>OpenAI SDK</strong> into internal tooling for automated data processing and content generation",
                     "Maintenance and extension of a legacy <strong>PHP 7.4→8.2</strong> API aggregator for transport company integrations",
-                    "Containerisation of the legacy stack with Docker, improving deployment consistency and developer onboarding",
-                    "Implementation of CI/CD pipeline to automate testing and deployment workflows"
+                    "Containerisation of the legacy stack with <strong>Docker</strong>, implementation of <strong>CI/CD</strong> pipeline"
                 ]
             },
             {

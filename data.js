@@ -2,7 +2,7 @@ const cvData = {
     cs: {
         lang: "cs",
         title: "Artem Kolychev - Životopis",
-        jobTitle: "Senior AI Engineer · Node.js Architect",
+        jobTitle: "Senior Software Engineer (AI & Automation)",
         location: "Praha, Česká republika",
         sections: {
             education: "Vzdělání",
@@ -41,13 +41,13 @@ const cvData = {
         ],
         license: { label: "ŘIDIČSKÝ PRŮKAZ", value: "A, B" },
         summary: [
-            "<strong>Senior AI Engineer</strong> a <strong>Node.js Architect</strong> s více než 10 lety zkušeností v softwarovém inženýrství, z toho <strong>4 roky se specializací na AI</strong> — <strong>návrh AI agentů</strong>, <strong>LLM pipeline</strong> (<strong>GPT-4o</strong>, <strong>Claude</strong>, <strong>OpenAI</strong>), event-driven mikroservisní architektury a zpracování dat ve velkém měřítku.",
+            "<strong>Senior Software Engineer</strong> se zaměřením na <strong>AI & Automation</strong> a více než 10 lety zkušeností v softwarovém inženýrství, s <strong>hlubokým fokusem na AI/LLM integraci v posledních letech</strong> — <strong>návrh AI agentů</strong>, <strong>LLM pipeline</strong> (<strong>GPT-4o</strong>, <strong>Claude</strong>, <strong>OpenAI</strong>), event-driven mikroservisní architektury a zpracování dat ve velkém měřítku.",
             "Navrhuji a vlastním celý životní cyklus produkčních AI systémů — od lokálních Docker prostředí po cloudové nasazení. Vedl tým 7 inženýrů: technické vedení, code review, nastavování standardů a mentoring. Hlavní stack: <strong>Node.js (NestJS / Express)</strong>, <strong>TypeScript</strong>, REST API.",
             "Silné zaměření na observabilitu (<strong>Loki/Grafana</strong>), spolehlivost <strong>AI pipeline</strong> a eliminaci manuálních procesů prostřednictvím automatizovaných pipeline a <strong>AI agentů</strong> zakotvených v business logice."
         ],
         experience: [
             {
-                title: "SENIOR AI ENGINEER (Osobní projekty)",
+                title: "LEAD AI ENGINEER · Bazarai & VisaCzech",
                 date: "",
                 company: "",
                 text: '<div class="project-block"><span class="project-title">Bazar AI</span><span class="project-url">bazarai.visaczech.cz</span><ul><li>Navrhl event-driven mikroslužby: <strong>NestJS</strong> (AI agent + automatizace prohlížeče), <strong>RabbitMQ</strong> (správa životního cyklu publikací), <strong>Symfony 7.3</strong> / <strong>PHP 8.4</strong> (business logika)</li><li>Integroval AI agenta na bázi GPT-4o Vision přímo do business logiky — klasifikace médií, seskupování položek, lookup VIN/SPZ, generování inzerátů</li><li>Vyvinul vysokozátěžovou stealth službu pro automatizaci prohlížeče přes rebrowser-playwright (Chromium) pro paralelní správu sezení a publikaci na více platformách</li><li>Nasadil observability stack: Loki + Grafana + Promtail s end-to-end trasovatelností přes jobId / traceId / sessionId</li><li>Konfiguroval Nginx reverse proxy s Cloudflare trusted proxy headers (CF-Connecting-IP) a SSL pro produkční nasazení</li></ul></div><div class="project-block"><span class="project-title">VisaCzech</span><span class="project-url">visaczech.cz</span><ul><li>Navrhl vrstvenou architekturu Controllers → Facades → Services → Repositories (<strong>Node.js/Express</strong> + <strong>TypeORM</strong>)</li><li>Integroval OCR pasů (Mindee), CRM API a české administrativní služby</li><li>Nasazeno přes GitLab CI/CD, Docker Compose a Nginx reverse proxy</li></ul></div>'
@@ -152,7 +152,7 @@ const cvData = {
     ru: {
         lang: "ru",
         title: "Артём Колычев - Резюме",
-        jobTitle: "Senior AI Engineer · Node.js Architect",
+        jobTitle: "Senior Software Engineer (AI & Automation)",
         location: "Прага, Чешская Республика",
         sections: {
             education: "Образование",
@@ -192,13 +192,13 @@ const cvData = {
         ],
         license: { label: "ВОДИТЕЛЬСКИЕ ПРАВА", value: "A, B" },
         summary: [
-            "<strong>Senior AI Engineer</strong> и <strong>Node.js Architect</strong> с 10+ годами опыта в разработке ПО, из которых <strong>4 года специализация на AI</strong> — <strong>проектирование AI-агентов</strong>, <strong>LLM pipeline</strong> (<strong>GPT-4o</strong>, <strong>Claude</strong>, <strong>OpenAI</strong>), event-driven микросервисных архитектурах и обработке данных в масштабе.",
+            "<strong>Senior Software Engineer</strong> с фокусом на <strong>AI & Automation</strong> и 10+ годами опыта в разработке ПО, с <strong>глубоким фокусом на AI/LLM интеграции в последние годы</strong> — <strong>проектирование AI-агентов</strong>, <strong>LLM pipeline</strong> (<strong>GPT-4o</strong>, <strong>Claude</strong>, <strong>OpenAI</strong>), event-driven микросервисных архитектурах и обработке данных в масштабе.",
             "Проектирую и владею полным жизненным циклом продакшн AI-систем — от локальных Docker-сред до облачного деплоя. Руководил командой 7 инженеров: техническое лидерство, code review, стандарты и менторинг. Основной стек: <strong>Node.js (NestJS / Express)</strong>, <strong>TypeScript</strong>, REST API.",
             "Сильный фокус на наблюдаемости (<strong>Loki/Grafana</strong>), надёжности <strong>AI-пайплайнов</strong> и устранении ручных процессов через автоматизированные пайплайны и <strong>AI-агентов</strong>, встроенных в бизнес-логику."
         ],
         experience: [
             {
-                title: "SENIOR AI ENGINEER (Личные проекты)",
+                title: "LEAD AI ENGINEER · Bazarai & VisaCzech",
                 date: "",
                 company: "",
                 text: '<div class="project-block"><span class="project-title">Bazar AI</span><span class="project-url">bazarai.visaczech.cz</span><ul><li>Спроектировал event-driven микросервисы: <strong>NestJS</strong> (AI-агент + браузерная автоматизация), <strong>RabbitMQ</strong> (управление жизненным циклом публикаций), <strong>Symfony 7.3</strong> / <strong>PHP 8.4</strong> (бизнес-логика)</li><li>Интегрировал AI-агент на базе GPT-4o Vision напрямую в бизнес-логику — классификация медиа, группировка товаров, поиск по VIN/госномеру, генерация объявлений</li><li>Разработал высоконагруженный stealth-сервис браузерной автоматизации через rebrowser-playwright (Chromium) для параллельного управления сессиями и публикации на нескольких платформах</li><li>Развернул стек наблюдаемости: Loki + Grafana + Promtail со сквозной трассировкой по jobId / traceId / sessionId</li><li>Настроил Nginx reverse proxy с Cloudflare trusted proxy headers (CF-Connecting-IP) и SSL для продакшн-деплоя</li></ul></div><div class="project-block"><span class="project-title">VisaCzech</span><span class="project-url">visaczech.cz</span><ul><li>Спроектировал многоуровневую архитектуру Controllers → Facades → Services → Repositories (<strong>Node.js/Express</strong> + <strong>TypeORM</strong>)</li><li>Интегрировал OCR паспортов (Mindee), CRM API и чешские административные сервисы</li><li>Деплой через GitLab CI/CD, Docker Compose и Nginx reverse proxy</li></ul></div>'
@@ -303,7 +303,7 @@ const cvData = {
     en: {
         lang: "en",
         title: "Artem Kolychev - CV",
-        jobTitle: "Senior AI Engineer · Node.js Architect",
+        jobTitle: "Senior Software Engineer (AI & Automation)",
         location: "Prague, Czech Republic",
         sections: {
             education: "Education",
@@ -342,13 +342,13 @@ const cvData = {
         ],
         license: { label: "DRIVING LICENSE", value: "A, B" },
         summary: [
-            "<strong>Senior AI Engineer</strong> and <strong>Node.js Architect</strong> with 10+ years in software engineering, including <strong>4 years specialising in AI</strong> — <strong>AI agent design</strong>, <strong>LLM pipelines</strong> (<strong>GPT-4o</strong>, <strong>Claude</strong>, <strong>OpenAI</strong>), event-driven microservice architectures, and data processing at scale.",
+            "<strong>Senior Software Engineer</strong> specialising in <strong>AI & Automation</strong> with 10+ years in software engineering and a <strong>deep focus on AI/LLM integration in recent years</strong> — <strong>AI agent design</strong>, <strong>LLM pipelines</strong> (<strong>GPT-4o</strong>, <strong>Claude</strong>, <strong>OpenAI</strong>), event-driven microservice architectures, and data processing at scale.",
             "Architected and owned full production AI system lifecycles — from self-hosted Docker environments on Linux to cloud deployments. Led a team of 7 engineers: technical leadership, <strong>code review</strong>, standard-setting, and mentoring. Primary stack: <strong>Node.js (NestJS / Express)</strong>, <strong>TypeScript</strong>, REST API.",
             "Strong focus on observability (<strong>Loki/Grafana</strong>), <strong>AI pipeline</strong> reliability, and eliminating manual processes through automated pipelines and <strong>AI agents</strong> embedded in business workflows."
         ],
         experience: [
             {
-                title: "SENIOR AI ENGINEER (Personal Projects)",
+                title: "LEAD AI ENGINEER · Bazarai & VisaCzech",
                 date: "",
                 company: "",
                 text: '<div class="project-block"><span class="project-title">Bazar AI</span><span class="project-url">bazarai.visaczech.cz</span><ul><li>Architected event-driven microservices: <strong>NestJS</strong> (AI agent + browser automation), <strong>RabbitMQ</strong> (publication lifecycle management), <strong>Symfony 7.3</strong> / <strong>PHP 8.4</strong> (business logic)</li><li>Integrated GPT-4o Vision AI agent directly into business logic — media classification, item grouping, VIN/plate lookup, automated listing generation</li><li>Engineered a high-load stealth browser automation service via rebrowser-playwright (Chromium) for concurrent multi-platform session management and form submission</li><li>Deployed full observability stack: Loki + Grafana + Promtail with cross-service tracing via jobId / traceId / sessionId</li><li>Configured Nginx reverse proxy with Cloudflare trusted proxy headers (CF-Connecting-IP) and SSL for production deployment</li></ul></div><div class="project-block"><span class="project-title">VisaCzech</span><span class="project-url">visaczech.cz</span><ul><li>Designed layered backend architecture: Controllers → Facades → Services → Repositories (<strong>Node.js/Express</strong> + <strong>TypeORM</strong>)</li><li>Integrated passport OCR (Mindee), CRM APIs, and Czech administrative services</li><li>Deployed via GitLab CI/CD, Docker Compose, and Nginx reverse proxy</li></ul></div>'

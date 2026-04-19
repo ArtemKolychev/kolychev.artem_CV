@@ -8,9 +8,7 @@ const cvData = {
             education: "Vzdělání",
             skills: "Hlavní Dovednosti",
             links: "Projekty a Odkazy",
-            languages: "Jazyky",
-            personal: "Osobní Údaje",
-            license: "Řidičský Průkaz",
+            languages: "Jazyky", license: "Řidičský Průkaz",
             summary: "Profesní Shrnutí",
             experience: "Pracovní Historie"
         },
@@ -35,9 +33,6 @@ const cvData = {
             { name: "Angličtina (B1)", level: 50 },
             { name: "Ruština (rodilý)", level: 100 },
             { name: "Čeština (C1)", level: 90 }
-        ],
-        personal: [
-            { label: "Státní příslušnost", value: "Rus" }
         ],
         license: { label: "ŘIDIČSKÝ PRŮKAZ", value: "A, B" },
         summary: [
@@ -158,9 +153,7 @@ const cvData = {
             education: "Образование",
             skills: "Ключевые Навыки",
             links: "Проекты и Ссылки",
-            languages: "Языки",
-            personal: "Личные Данные",
-            license: "Водительские Права",
+            languages: "Языки", license: "Водительские Права",
             summary: "Профессиональное Резюме",
             experience: "Опыт Работы"
         },
@@ -185,10 +178,6 @@ const cvData = {
             { name: "Английский (B1)", level: 50 },
             { name: "Русский (родной)", level: 100 },
             { name: "Чешский (C1)", level: 90 }
-        ],
-        personal: [
-            { label: "Дата рождения", value: "20 апр 1992" },
-            { label: "Гражданство", value: "Россия" }
         ],
         license: { label: "ВОДИТЕЛЬСКИЕ ПРАВА", value: "A, B" },
         summary: [
@@ -309,9 +298,7 @@ const cvData = {
             education: "Education",
             skills: "Core Skills",
             links: "Projects & Links",
-            languages: "Languages",
-            personal: "Personal Details",
-            license: "Driving License",
+            languages: "Languages", license: "Driving License",
             summary: "Professional Summary",
             experience: "Work History"
         },
@@ -336,9 +323,6 @@ const cvData = {
             { name: "English (B1)", level: 50 },
             { name: "Russian (Native)", level: 100 },
             { name: "Czech (C1)", level: 90 }
-        ],
-        personal: [
-            { label: "Nationality", value: "Russian" }
         ],
         license: { label: "DRIVING LICENSE", value: "A, B" },
         summary: [

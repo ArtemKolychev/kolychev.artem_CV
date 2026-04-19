@@ -24,7 +24,7 @@
         document.getElementById('h-skills').textContent = data.sections.skills;
         document.getElementById('h-links').textContent = data.sections.links;
         document.getElementById('h-languages').textContent = data.sections.languages;
-        document.getElementById('h-personal').textContent = data.sections.personal;
+
         document.getElementById('h-license').textContent = data.sections.license;
 
         // Right column section headings
@@ -73,17 +73,6 @@
                 '<div class="language-name">' + l.name + '</div>' +
                 '<div class="bar-bg"><div class="bar-fill" style="width:' + l.level + '%;"></div></div>' +
                 '</div>';
-        }).join('');
-
-        // Personal details
-        var personalContainer = document.getElementById('personal-list');
-        personalContainer.innerHTML = data.personal.map(function (item) {
-            return '<div class="section-item" style="padding-left:15px;">' +
-                '<div class="bullet-point"></div>' +
-                '<div class="personal-detail">' +
-                '<label>' + item.label + '</label>' +
-                '<span>' + item.value + '</span>' +
-                '</div></div>';
         }).join('');
 
         // License

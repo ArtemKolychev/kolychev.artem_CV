@@ -9,7 +9,6 @@ const cvData = {
             skills: "Hlavní Dovednosti",
             links: "Projekty a Odkazy",
             languages: "Jazyky",
-            personal: "Osobní Údaje",
             license: "Řidičský Průkaz",
             summary: "Profesní Shrnutí",
             experience: "Pracovní Historie"
@@ -34,9 +33,6 @@ const cvData = {
             { name: "Angličtina (B1)", level: 50 },
             { name: "Ruština (rodilý)", level: 100 },
             { name: "Čeština (C1)", level: 90 }
-        ],
-        personal: [
-            { label: "Státní příslušnost", value: "Rus" }
         ],
         license: { label: "ŘIDIČSKÝ PRŮKAZ", value: "A, B" },
         summary: [
@@ -98,7 +94,7 @@ const cvData = {
                 items: [
                     "Návrh a implementace backend API v <strong>PHP 7.4</strong> pro nástroje finančního srovnání",
                     "Optimalizace databázových dotazů pro zlepšení výkonu výpočetně náročných endpointů",
-                    "Spolupráce na frontendu (<strong>Nuxt 3</strong> / Tailwind) pro zajištění souladu API kontraktů s UI"
+                    "Spolupráce na frontendu (<strong>Vue.js / Nuxt</strong> / Tailwind) pro zajištění souladu API kontraktů s UI"
                 ]
             },
             {
@@ -118,7 +114,7 @@ const cvData = {
                 date: "KVĚ 2017 - ÚNO 2018",
                 company: "DESIGNEO, PRAHA",
                 items: [
-                    "Implementace backendových funkcí v <strong>PHP 7.4/8.2</strong> a <strong>Symfony</strong> pro klientské webové aplikace"
+                    "Implementace backendových funkcí v <strong>PHP 7.1</strong> a <strong>Symfony</strong> pro klientské webové aplikace"
                 ]
             },
             {
@@ -158,7 +154,6 @@ const cvData = {
             skills: "Ключевые Навыки",
             links: "Проекты и Ссылки",
             languages: "Языки",
-            personal: "Личные Данные",
             license: "Водительские Права",
             summary: "Профессиональное Резюме",
             experience: "Опыт Работы"
@@ -183,10 +178,6 @@ const cvData = {
             { name: "Английский (B1)", level: 50 },
             { name: "Русский (родной)", level: 100 },
             { name: "Чешский (C1)", level: 90 }
-        ],
-        personal: [
-            { label: "Дата рождения", value: "20 апр 1992" },
-            { label: "Гражданство", value: "Россия" }
         ],
         license: { label: "ВОДИТЕЛЬСКИЕ ПРАВА", value: "A, B" },
         summary: [
@@ -248,7 +239,7 @@ const cvData = {
                 items: [
                     "Проектирование и реализация бэкенд API на <strong>PHP 7.4</strong> для инструментов финансового сравнения",
                     "Оптимизация запросов к БД для повышения производительности вычислительно-интенсивных эндпоинтов",
-                    "Участие в разработке фронтенда (<strong>Nuxt 3</strong> / Tailwind) для согласования API-контрактов с UI"
+                    "Участие в разработке фронтенда (<strong>Vue.js / Nuxt</strong> / Tailwind) для согласования API-контрактов с UI"
                 ]
             },
             {
@@ -268,7 +259,7 @@ const cvData = {
                 date: "МАЙ 2017 - ФЕВ 2018",
                 company: "DESIGNEO, ПРАГА",
                 items: [
-                    "Реализация бэкенд-функций на <strong>PHP 7.4/8.2</strong> и <strong>Symfony</strong> для клиентских веб-приложений"
+                    "Реализация бэкенд-функций на <strong>PHP 7.1</strong> и <strong>Symfony</strong> для клиентских веб-приложений"
                 ]
             },
             {
@@ -308,7 +299,6 @@ const cvData = {
             skills: "Core Skills",
             links: "Projects & Links",
             languages: "Languages",
-            personal: "Personal Details",
             license: "Driving License",
             summary: "Professional Summary",
             experience: "Work History"
@@ -333,9 +323,6 @@ const cvData = {
             { name: "English (B1)", level: 50 },
             { name: "Russian (Native)", level: 100 },
             { name: "Czech (C1)", level: 90 }
-        ],
-        personal: [
-            { label: "Nationality", value: "Russian" }
         ],
         license: { label: "DRIVING LICENSE", value: "A, B" },
         summary: [
@@ -397,7 +384,7 @@ const cvData = {
                 items: [
                     "Design and implementation of backend APIs in <strong>PHP 7.4</strong> for financial comparison tools",
                     "Optimisation of database queries, improving response times on calculation-heavy endpoints",
-                    "Collaboration on frontend (<strong>Nuxt 3</strong> / Tailwind) to align API contracts with UI requirements"
+                    "Collaboration on frontend (<strong>Vue.js / Nuxt</strong> / Tailwind) to align API contracts with UI requirements"
                 ]
             },
             {
@@ -417,7 +404,7 @@ const cvData = {
                 date: "MAY 2017 - FEB 2018",
                 company: "DESIGNEO, PRAGUE",
                 items: [
-                    "Implementation of backend features in <strong>PHP 7.4/8.2</strong> and <strong>Symfony</strong> for client web applications"
+                    "Implementation of backend features in <strong>PHP 7.1</strong> and <strong>Symfony</strong> for client web applications"
                 ]
             },
             {
